@@ -1,6 +1,8 @@
 package ui;
 
 import javax.swing.*;
+import java.util.HashMap;
+import java.util.Properties;
 
 public class Console {
     private JTextArea consoleTextArea;
@@ -8,7 +10,7 @@ public class Console {
     private JButton stopButton;
     private JButton backButton;
 
-    public Console(Navigator navigator){
+    public Console(Navigator navigator, Properties properties){
         backButton.addActionListener(e ->{
             navigator.show("ServerManager");
         });

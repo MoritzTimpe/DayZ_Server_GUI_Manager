@@ -2,6 +2,9 @@ package ui;
 
 import javax.swing.*;
 
+import java.util.HashMap;
+import java.util.Properties;
+
 import static ui.Screens.*;
 
 public class ServerManager {
@@ -11,7 +14,7 @@ public class ServerManager {
     private JButton consoleButton;
     private JButton liveMapButton;
 
-    public ServerManager(Navigator navigator){
+    public ServerManager(Navigator navigator, Properties properties){
         consoleButton.addActionListener(e -> {
             navigator.show(CONSOLE);
         });
